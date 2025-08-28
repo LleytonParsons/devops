@@ -12,3 +12,9 @@ describe("First two terms", function() {
         assert.strictEqual(main.fibonacci(1), 1);
     });
 });
+
+describe("Negative numbers can't have a factorial", function() {
+    it("should return undefined if the input is negative", function() {
+        assert.strictEqual(main.fibonacci(-1), undefined);
+    });
+});
